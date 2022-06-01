@@ -1,0 +1,12 @@
+server:
+  name: service-bootcoin
+  port: 8088
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 2030
+      database: banking
+      
+      
