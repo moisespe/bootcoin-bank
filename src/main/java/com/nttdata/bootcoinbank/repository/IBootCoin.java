@@ -1,5 +1,9 @@
 package com.nttdata.bootcoinbank.repository;
 
-public interface IBootCoin {
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+
+import com.nttdata.bootcoinbank.model.BootCoin;
+
+public interface IBootCoin extends ReactiveMongoRepository<BootCoin, String>{
 
 }

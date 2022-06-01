@@ -1,5 +1,7 @@
 package com.nttdata.bootcoinbank.model;
 
+import java.time.LocalDateTime;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -16,11 +18,14 @@ public class Customer {
 	
 	@Id
 	private String id;
+
+	@Field("nameCustomer")
+	private String nameCustomer;
 	
-	@Field(name = "customerType")
-	private String customerType;
+	@Field("typeCustomer")
+	private String typeCustomer;
 	
-	@Field(name = "name")
-	private String name;
+	@Field("openDate")
+	private LocalDateTime openDate = LocalDateTime.now();
 	
 }
