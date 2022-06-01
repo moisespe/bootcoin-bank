@@ -1,3 +1,5 @@
 @echo off
 mvn clean install
-docker-compose up -d
+CMD docker-compose up -d
+pause
+echo servicio activo
