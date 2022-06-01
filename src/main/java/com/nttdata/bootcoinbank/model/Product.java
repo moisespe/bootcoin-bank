@@ -23,6 +23,7 @@ public class Product{
 	@Field("productType")
 	private String productType;
 	
-	
+	@Field("rates")
+	private double rates;
 	
 }
